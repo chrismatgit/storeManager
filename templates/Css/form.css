@@ -1,0 +1,76 @@
+html{
+	background-color: #f3f3f3;
+}
+
+.registration_form{
+	max-width: 1000px;
+	/*margin: 0 auto;*/
+	width: 100%;
+	font: bold 15px sans-serif;
+	text-align: center;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+/*	Making the form responsive for small devices. */
+
+@media (max-width: 900px) {
+
+    .registration_form{
+        margin: 20px auto;
+    }
+
+    .register_layout{
+        position: relative;
+        display: block;
+        margin: 0;
+    }
+
+    .registration_layout .registration_layout_bgcolor{
+        margin: 0 auto 32px;
+    }
+
+    .registration_layout:after{
+        bottom: -80px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    .registration_layout .registration_layout_bgcolor{
+        width: 300px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .registration_layout .form_row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 10px;
+    }
+
+    .registration_layout input{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .registration_layout .form_checkbox input{
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .registration_layout .form_checkbox span{
+        width: 200px !important;
+    }
+
+    .registration_layout :after{
+        bottom: -80px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+}
