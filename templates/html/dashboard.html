@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="../Css/mycss.css">
+	<link rel="stylesheet" type="text/css" href="../Css/form.css">
+	<link rel="stylesheet" type="text/css" href="../Css/style.css">
+</head>
+<body>
+	<div class="block content margin-auto">
+		<header>
+			<h1>STORE PROJECT</h1>
+			<div class="set-right">
+				<a href="userSettings.html"><button class="ease-in-out-all-quick"><img src=""><span>Settings</span></button></a>
+				<a href="index.html"><button class="ease-in-out-all-quick"><img src=""><span>Logout</span></button></a>
+			</div>
+		</header>
+
+		<!-- div containing diffent menu the 1/4 of the site -->
+		<div class="inline-block quater  centered grid left">
+			<!-- list containing my menu  -->
+			<ul class="menu align-left">
+				<a  href="availableProduct.html" class="block item ease-in-out-all-quick" ><li id="menu-products">Available Products</li></a>
+				<a href="availableProduct.html" class="block item ease-in-out-all-quick"><li id="menu-cart" cmd-click="select-menu=>cart">My Cart</li></a>
+				<a href="availableProduct.html" class="block item ease-in-out-all-quick" ><li id="menu-history" cmd-click="select-menu=>history">Purshase history</li></a>
+			</ul>
+			<!-- end of the menu -->
+
+			<!-- div containing categories in a list menu -->
+			<div class="categories-title align-left">Categories :</div>
+			<ul class="menu align-left categories">
+				<li class="block category ease-in-out-all-quick">Electronics</li>
+				<li class="block category ease-in-out-all-quick">Fashion</li>
+				<li class="block category ease-in-out-all-quick">Food</li>
+			</ul>
+			<!-- end of the item/prduct categories -->
+		</div><div class="inline-block third-quarter centered grid right"><!-- 3/4 div of the site -->
+			<!-- search div of the site -->
+			<div class="block banner align-left ease-in-out-all-quick" id="banner">
+				<form class="search flex">
+					<input class="inline-block ease-in-out-all-quick" type="search" name="search" id="search" placeholder="Search here ..."><input  class="inline-block ease-in-out-all-quick" type="submit" value="search">
+
+					<select class="category inline-block ease-in-out-all-quick">
+						<option>Category</option>
+						<option>Electronics</option>
+						<option>Clothes</option>
+					</select>
+					<select class="category inline-block ease-in-out-all-quick">
+						<option>Order by:</option>
+						<option>Lowest price</option>
+						<option>Highest price</option>
+					</select>
+				</form>
+			</div>
+			<!-- end of the search div of the site -->
+			<br><h2>WELCOME TO OUR STORE</h2>
+			<p class="align-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ab aliquid blanditiis exercitationem nobis? Labore, accusamus, totam? Officia aspernatur asperiores cumque aut, perferendis esse totam voluptates, repudiandae, at, iusto eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ab aliquid blanditiis exercitationem nobis? Labore, accusamus, totam? Officia aspernatur asperiores cumque aut, perferendis esse totam voluptates, repudiandae, at, iusto eos.</p>
+		</div>
+		<!-- end of the 3/4 div of the site -->
+	</div>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

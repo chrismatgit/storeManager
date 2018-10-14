@@ -77,7 +77,22 @@ login = {
 		$('#login-tab').removeClass('selected');
 	}
 }
+myform = {
+	init: function(){
 
+	},
+	validate: function(){
+		if(!valid.email($('#email').val())){
+			$('#alert-form').html('Please Enter an email address');
+			$('#email').focus();
+			return false;
+		}
+		else if(!valid.password($('#password').val())){
+			$('#alert-form').html('Please Enter a valid password');
+			$('#password').focus();
+			return false;
+		}
+		return true;
 signup = {
 	init: function(){
 

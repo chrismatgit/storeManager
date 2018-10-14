@@ -181,9 +181,18 @@
 	border-bottom: 1px solid #aaa;
 	margin: 10px 10px 10px 10px;
 	padding: 5px 5px 5px 5px;
-	background-color: #888;
+	background-color: #777;
 	border-radius: 2px;
 	color: #fff;
+	line-height: 100%;
+	font-size: 1rem;
+}
+.menu .item li{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	position: relative;
+	line-height: 100%;
+	background-color: inherit;
 }
 .menu .selected{
 	background-color: orangered;
@@ -207,6 +216,10 @@
 	background-color: #ddd;
 	border-radius: 2px;
 	font-size: 0.8rem;
+}
+.categories .category.selected{
+	background-color: orangered;
+	color: #fff;
 }
 .categories .category:hover{
 	background-color: #46B2B4;
@@ -423,5 +436,23 @@
 .pay-all:hover{
 	box-shadow:  0 0 3px #353535;
 	cursor: pointer;
+}
+.set-right{
+	position: absolute;
+	top: 10%;
+	right: 5%;
+}
+.set-right button{
+	border: 1px solid #777;
+	border-radius: 4px;
+	box-shadow: 0 0 2px #777;
+	padding: 5px 10px 5px 10px;
+	background-color: #eee;
+	min-width: 90px;
+	outline: none;
+}
+.set-right button:hover{
+	cursor: pointer;
+	box-shadow: 0 0 4px #777;
 }
 

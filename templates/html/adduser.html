@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add User</title>
+	<link rel="stylesheet" type="text/css" href="../Css/mycss.css">
+	<link rel="stylesheet" type="text/css" href="../Css/form.css">
+	<link rel="stylesheet" type="text/css" href="../Css/style.css">
+</head>
+<body>
+	<div class="block content margin-auto">
+		<header>
+			<h1>STORE PROJECT</h1>
+			<h3>ADMIN</h3>
+			<div class="set-right">
+				<a href="#"><button class="ease-in-out-all-quick"><img src=""><span>Settings</span></button></a>
+				<a href="#"><button class="ease-in-out-all-quick"><img src=""><span>Logout</span></button></a>
+			</div>
+		</header>
+		
+		<!-- div containing diffent menu the 1/4 of the site -->
+		<div class="inline-block quater  centered grid left">
+			<!-- list containing my menu  -->
+			<ul class="menu align-left">
+				<a  href="adminAvailableProduct.html" class="block item ease-in-out-all-quick" ><li id="menu-products">Available Products</li></a>
+				<a href="usershistory.html" class="block item ease-in-out-all-quick"><li id="menu-usershistory">Purshase history</li></a>
+				<a href="adduser.html" class="block item ease-in-out-all-quick"><li id="menu-adduser">Add user</li></a>
+				<a href="managerUser.html" class="block item ease-in-out-all-quick"><li id="menu-manager">Add admin rights</li></a>
+				<a href="addProduct.html" class="block item ease-in-out-all-quick"><li id="menu-addItem">Add Item</li></a>
+				<a href="editProduct.html" class="block item ease-in-out-all-quick"><li id="menu-editItem">Edit Item</li></a>
+				<a href="deleteProduct.html" class="block item ease-in-out-all-quick"><li id="menu-addItem">Delete Item</li></a>
+			</ul>
+			<!-- end of the menu -->
+
+			<!-- menu containing availble product -->
+		</div><div class="inline-block third-quarter centered grid right">
+
+			<!-- div containing the add user content -->
+			<div class="block box align-left ease-in-out-all-quick" id="addUser">
+				<div class="title">
+					Create a new user
+				</div>
+				<!-- form to create a new user  -->
+				<form class="form signup ease-in-out-all left"  id="signup" method="post" action="admin.html" onsubmit="return(login.validate())">
+					<div class="block inputs align-left alert">
+						<span class="text-red align-left" id="alert-form"></span>
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="name">Full name: </label>
+						<input type="text"  class="ease-in-out-all" name="name" id="name" placeholder="Enter your fullname" cmd-input="validate=>string">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="phone">Phone: </label>
+						<input type="text"  class="ease-in-out-all"  name="phone" id="phone" placeholder="Enter your phone number" cmd-input="validate=>email">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="sign-email">Email: </label>
+						<input type="email"  class="ease-in-out-all"  name="sign-email" id="sign-email" placeholder="Enter your email">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="passcode">Password: </label>
+						<input type="password"  class="ease-in-out-all" name="passcode" placeholder="Enter your password">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="passcode-confirm">Confirm: </label>
+						<input type="password"  class="ease-in-out-all" name="passcode-confirm" id="passcode-confirm" placeholder="Confirm your password">
+					</div>
+					<div class="block inputs">
+						<input type="submit"  class="ease-in-out-all" value="Create Now">
+					</div>
+				</form>
+				<!-- end of the create user form -->
+			</div>	
+			<!-- end of div containing the add user content  -->
+		</div>
+			<!-- end of the div containing the 3/4 of the site -->
+
+	</div>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
