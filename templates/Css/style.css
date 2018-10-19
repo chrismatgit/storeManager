@@ -4,7 +4,7 @@
 	background-color: #e0e0e0;
 	min-height: 100px;
 }
-.ease-in-out-all-quick {-webkit-transition: all .2s ease-in-out;-moz-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out;transition: all .2s ease-in-out;} 
+.ease-in-out-all-quick {-webkit-transition: all .2s ease-in-out;-moz-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out;transition: all .2s ease-in-out;}
 .ease-in-out-all {-webkit-transition: all .5s ease-in-out;-moz-transition: all .5s ease-in-out; -ms-transition: all .5s ease-in-out;-o-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}  .ease-in-out-all-long {-webkit-transition: all 1.5s ease-in-out;-moz-transition: all 1.5s ease-in-out;-ms-transition: all 1.5s ease-in-out;-o-transition: all 1.5s ease-in-out;transition: all 1.5s ease-in-out;} .ease-in-out-opacity {-webkit-transition: opacity .5s ease-in-out;-moz-transition: opacity .5s ease-in-out;-ms-transition: opacity .5s ease-in-out;-o-transition: opacity .5s ease-in-out;transition: opacity .5s ease-in-out;}  .ease-in-out-background {-webkit-transition: background .5s ease-in-out;-moz-transition: background .5s ease-in-out;-ms-transition: background .5s ease-in-out;-o-transition: background .5s ease-in-out;transition: background .5s ease-in-out;}  .ease-in-out-background-color {-webkit-transition: background-color .5s ease-in-out;-moz-transition: background-color .5s ease-in-out;-ms-transition: background-color .5s ease-in-out;-o-transition: background-color .5s ease-in-out;transition: background-color .5s ease-in-out;}  .ease-in-out-width {-webkit-transition: width .5s ease-in-out;-moz-transition: width .5s ease-in-out;-ms-transition: width .5s ease-in-out;-o-transition: width .5s ease-in-out;transition: width .5s ease-in-out;}  .ease-in-out-border {-webkit-transition: border .5s ease-in-out;-moz-transition: border .5s ease-in-out;-ms-transition: border .5s ease-in-out;-o-transition: border .5s ease-in-out;transition: border .5s ease-in-out;}
 .ease-in-out-height {-webkit-transition: height .5s ease-in-out;-moz-transition: height .5s ease-in-out;-ms-transition: height .5s ease-in-out;-o-transition: height .5s ease-in-out;transition: height .5s ease-in-out;}  .ease-in-out-height-long {-webkit-transition: height 1.5s ease-in-out;-moz-transition: height 1.5s ease-in-out;-ms-transition: height 1.5s ease-in-out;-o-transition: height 1.5s ease-in-out;transition: height 1.5s ease-in-out;}
 .flex{display: flex; box-sizing: padding-box;}
@@ -129,7 +129,7 @@
 	margin-left: 195px;
 	padding:8px 20px;
 	background:#fff;
-	
+
 }
 .remember{
 	line-height: 50px;
@@ -319,7 +319,7 @@
 	width: 100%;
 	height: 250px;
 	background-color: #fff;
-	border-bottom: 1px solid #aaa; 
+	border-bottom: 1px solid #aaa;
 }
 .product-image img{
 	width: 100%;
@@ -456,3 +456,118 @@
 	box-shadow: 0 0 4px #777;
 }
 
+
+/*	Making the form responsive for small devices. */
+
+@media (max-width: 900px) {
+
+    .registration_form{
+        margin: 20px auto;
+    }
+
+    .register_layout{
+        position: relative;
+        display: block;
+        margin: 0;
+    }
+
+    .registration_layout .registration_layout_bgcolor{
+        margin: 0 auto 32px;
+    }
+
+    .registration_layout:after{
+        bottom: -80px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    .block .margin-auto{
+        width: 300px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+		header {
+			padding-right: 0px;
+			margin-left: 0;
+			width: 300px;
+		}
+		.set-right{
+			position: relative;
+			left: 5px;
+		}
+		.quater{
+			width: 33%;
+			padding: 0px;
+		}
+		.banner .search{
+			width: 200px;
+			padding: 0px;
+			margin: 0px;
+			min-width: 250px;
+		}
+		p{
+			width: 40%;
+		}
+		.tit{
+			text-align: left;
+			width: 40%;
+		}
+		.products{
+			width: 40%;
+		}
+		.products .product{
+			width: 45%;
+			height: 350px;
+			margin: 10px 1% 0 1%;
+			background-color: #ddd;
+			box-shadow:  0 0 1px #353535;
+			border-radius: 2px;
+		}
+		.product-image{
+			width: 100%;
+			height: 250px;
+			background-color: #fff;
+			border-bottom: 1px solid #aaa;
+		}
+		.box .title{
+			width: 45%;
+			margin: 0;
+		}
+		.box .soften{
+			width: 40%;
+		}
+		.block{
+			align-content: auto;
+		}
+    .registration_layout .form_row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 10px;
+    }
+
+    .registration_layout input{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .registration_layout .form_checkbox input{
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .registration_layout .form_checkbox span{
+        width: 200px !important;
+    }
+
+    .registration_layout :after{
+        bottom: -80px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+}
