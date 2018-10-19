@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin</title>
+	<link rel="stylesheet" type="text/css" href="Css/mycss.css">
+	<link rel="stylesheet" type="text/css" href="Css/form.css">
+	<link rel="stylesheet" type="text/css" href="Css/style.css">
+	<link rel="stylesheet" type="text/css" href="Css/animation.css">
+</head>
+<body>
+	<div class="block content margin-auto">
+		<header>
+			<h1>STORE PROJECT</h1>
+			<h3>ADMIN</h3>
+		</header>
+		
+		<!-- div containing diffent menu the 1/4 of the site -->
+		<div class="inline-block quater  centered grid left">
+			<!-- list containing my menu  -->
+			<ul class="menu align-left">
+				<li class="block item ease-in-out-all-quick selected" id="menu-products" cmd-click="select-menu=>products">Available Products</li>
+				<li class="block item ease-in-out-all-quick"  id="menu-userhistory" cmd-click="select-menu=>userhistory">Purshase history</li>
+				<li class="block item ease-in-out-all-quick"  id="menu-adduser" cmd-click="select-menu=>addUser">Add user</li>
+				<li class="block item ease-in-out-all-quick"  id="menu-manager" cmd-click="select-menu=>addmanager">Manager Product</li>
+			</ul>
+			<!-- end of the menu -->
+
+			<!-- div containing actions in a list menu -->
+			<div class="categories-title align-left">Action :</div>
+			<ul class="menu align-left categories">
+				<li class="block category ease-in-out-all-quick" id="menu-addItem" cmd-click="select-menu=>addItem">Add Item</li>
+				<li class="block category ease-in-out-all-quick" id="menu-editItem" cmd-click="select-menu=>editItem">Edit Item</li>
+				<li class="block category ease-in-out-all-quick" id="menu-deleteItem" cmd-click="select-menu=>deleteItem">Delete Item</li>
+			</ul>
+			<!-- end of the div for admin actions -->
+
+			<!-- menu containing availble product -->
+		</div><div class="inline-block third-quarter centered grid right">
+			<!-- search div of the site -->
+			<div class="block banner align-left ease-in-out-all-quick" id="banner">
+				<form class="search flex">
+					<input class="inline-block ease-in-out-all-quick" type="search" name="search" id="search" placeholder="Search here ..."><input  class="inline-block ease-in-out-all-quick" type="submit" value="search">
+					<select class="category inline-block ease-in-out-all-quick">
+						<option>Category</option>
+						<option>Electronics</option>
+						<option>Clothes</option>
+					</select>
+					<select class="category inline-block ease-in-out-all-quick">
+						<option>Order by:</option>
+						<option>Lowest price</option>
+						<option>Highest price</option>
+					</select>
+				</form>
+			</div>
+			<!-- end of the search div -->
+
+			<!-- div containing different product and the grid display-->
+			<div class="block box align-left ease-in-out-all-quick selected" id="products">
+				<div class="title">
+					Available products
+					<div class="results centered">234</div>
+				</div>
+				<hr class="soften">
+				<ul class="products block align-left">
+					<!-- product in the grid view -->
+					<li class="product inline-block align-left ease-in-out-all-quick">
+						<div class="block product-image ease-in-out-all-quick">
+							<img src="img/store1.jpg" class="ease-in-out-all-quick">
+						</div>
+						<div class="block product-actions centered ease-in-out-all-quick">
+							<div class="price ease-in-out-all-quick">Ugx40 000</div>
+							<div class="stock ease-in-out-all-quick">345 in stock</div>
+						</div>
+					</li><li class="product inline-block align-left ease-in-out-all-quick">
+						<div class="block product-image ease-in-out-all-quick">
+							<img src="img/store1.jpg" class="ease-in-out-all-quick">
+						</div>
+						<div class="block product-actions centered ease-in-out-all-quick">
+							<div class="price ease-in-out-all-quick">Ugx40 000</div>
+							<div class="stock ease-in-out-all-quick">345 in stock</div>
+						</div>
+					</li><li class="product inline-block align-left ease-in-out-all-quick">
+						<div class="block product-image ease-in-out-all-quick">
+							<img src="img/store1.jpg" class="ease-in-out-all-quick">
+						</div>
+						<div class="block product-actions centered ease-in-out-all-quick">
+							<div class="price ease-in-out-all-quick">Ugx40 000</div>
+							<div class="stock ease-in-out-all-quick">345 in stock</div>
+						</div>
+					</li><li class="product inline-block align-left ease-in-out-all-quick">
+						<div class="block product-image ease-in-out-all-quick">
+							<img src="img/store1.jpg" class="ease-in-out-all-quick">
+						</div>
+						<div class="block product-actions centered ease-in-out-all-quick">
+							<div class="price ease-in-out-all-quick">Ugx40 000</div>
+							<div class="stock ease-in-out-all-quick">345 in stock</div>
+						</div>
+					</li><li class="product inline-block align-left ease-in-out-all-quick">
+						<div class="block product-image ease-in-out-all-quick">
+							<img src="img/store1.jpg" class="ease-in-out-all-quick">
+						</div>
+						<div class="block product-actions centered ease-in-out-all-quick">
+							<div class="price ease-in-out-all-quick">Ugx40 000</div>
+							<div class="stock ease-in-out-all-quick">345 in stock</div>
+						</div>
+					</li><li class="product inline-block align-left ease-in-out-all-quick">
+						<div class="block product-image ease-in-out-all-quick">
+							<img src="img/store1.jpg" class="ease-in-out-all-quick">
+						</div>
+						<div class="block product-actions centered ease-in-out-all-quick">
+							<div class="price ease-in-out-all-quick">Ugx40 000</div>
+							<div class="stock ease-in-out-all-quick">345 in stock</div>
+						</div>
+					</li><li class="product inline-block align-left ease-in-out-all-quick">
+						<div class="block product-image ease-in-out-all-quick">
+							<img src="img/store1.jpg" class="ease-in-out-all-quick">
+						</div>
+						<div class="block product-actions centered ease-in-out-all-quick">
+							<div class="price ease-in-out-all-quick">Ugx40 000</div>
+							<div class="stock ease-in-out-all-quick">345 in stock</div>
+						</div>
+					</li><li class="product inline-block align-left ease-in-out-all-quick">
+						<div class="block product-image ease-in-out-all-quick">
+							<img src="img/store1.jpg" class="ease-in-out-all-quick">
+						</div>
+						<div class="block product-actions centered ease-in-out-all-quick">
+							<div class="price ease-in-out-all-quick">Ugx40 000</div>
+							<div class="stock ease-in-out-all-quick">345 in stock</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- end of the div containing different product and the grid display-->
+
+			<!-- div containg the users transactions content -->
+			<div class="block box align-left ease-in-out-all-quick hidden" id="userhistory">
+				<div class="title">
+					Purchase History
+					<div class="results centered">24 items,  Ugx35 000</div>
+				</div>
+				<hr class="soften">
+				<!-- table containing the history data -->
+				<table class="cart align-left">
+					<thead>
+						<tr class="centered">
+							<td class="centered">No</td>
+							<td class="centered">Image</td>
+							<td class="centered">Description</td>
+							<td class="centered">Status</td>
+							<td class="centered">username</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="centered cart-article">
+							<td class="centered">01</td>
+							<td class="centered">
+								<div class="img centered">
+									<img src="img/store1.jpg">
+								</div>
+							</td>
+							<td class="centered">
+								<div class="cart-price">Ugx40 000</div>
+								<div>Quantity: 3</div>
+								<div> Since 3hours</div>
+							</td>
+							<td class="centered">
+								<strong>Delivered</strong>
+							</td>
+							<td class="centered">
+								<strong>chris</strong>
+							</td>
+						</tr>
+						<tr class="centered cart-article">
+							<td class="centered">01</td>
+							<td class="centered">
+								<div class="img centered">
+									<img src="img/store1.jpg">
+								</div>
+							</td>
+							<td class="centered">
+								<div class="cart-price">Ugx40 000</div>
+								<div>Quantity: 3</div>
+								<div> Since 3hours</div>
+							</td>
+							<td class="centered">
+								<strong>Delivered</strong>
+							</td>
+							<td class="centered">
+								<strong>chris</strong>
+							</td>
+						<tr class="centered cart-article">
+							<td class="centered">01</td>
+							<td class="centered">
+								<div class="img centered">
+									<img src="img/store1.jpg">
+								</div>
+							</td>
+							<td class="centered">
+								<div class="cart-price">Ugx40 000</div>
+								<div>Quantity: 3</div>
+								<div> Since 3hours</div>
+							</td>
+							<td class="centered">
+								<strong>Delivered</strong>
+							</td>
+							<td class="centered">
+								<strong>chris</strong>
+							</td>
+						</tr>
+						<tr class="centered cart-article">
+							<td class="centered">01</td>
+							<td class="centered">
+								<div class="img centered">
+									<img src="img/store1.jpg">
+								</div>
+							</td>
+							<td class="centered">
+								<div class="cart-price">Ugx40 000</div>
+								<div>Quantity: 3</div>
+								<div> Since 3hours</div>
+							</td>
+							<td class="centered">
+								<strong>Delivered</strong>
+							</td>
+							<td class="centered">
+								<strong>chris</strong>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- end of the table  -->
+			</div>
+			<!-- div containing the add user content -->
+			<div class="block box align-left ease-in-out-all-quick hidden" id="addUser">
+				<div class="title">
+					Create a new user
+				</div>
+				<!-- form to create a new user  -->
+				<form class="form signup ease-in-out-all left"  id="signup" method="post" action="dashboard.html">
+					<div class="block inputs">
+						<label class="tag" for="name">Full name: </label>
+						<input type="text"  class="ease-in-out-all" name="name" id="name" placeholder="Enter your fullname">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="phone">Phone: </label>
+						<input type="text"  class="ease-in-out-all"  name="phone" id="phone" placeholder="Enter your phone number">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="sign-email">Email: </label>
+						<input type="email"  class="ease-in-out-all"  name="sign-email" id="sign-email" placeholder="Enter your email">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="passcode">Password: </label>
+						<input type="password"  class="ease-in-out-all" name="passcode" placeholder="Enter your password">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="passcode-confirm">Confirm: </label>
+						<input type="password"  class="ease-in-out-all" name="passcode-confirm" id="passcode-confirm" placeholder="Confirm your password">
+					</div>
+					<div class="block inputs">
+						<input type="submit"  class="ease-in-out-all" value="Create Now">
+					</div>
+				</form>
+				<!-- end of the create user form -->
+			</div>
+
+			<!-- div to add an item -->
+			<div class="block box align-left ease-in-out-all hidden" id="addItem">
+				<div class="title">
+					Add an Item
+				</div>
+				<hr class="soften">
+				<form class="form signup ease-in-out-all left"  id="signup" method="post" action="dashboard.html">
+					<div class="block inputs">
+						<label class="tag" for="itemName">Item name: </label>
+						<input type="text"  class="ease-in-out-all" name="name" id="itemName" placeholder="Enter item name here">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="itemPrice">Item price: </label>
+						<input type="text"  class="ease-in-out-all"  name="phone" id="itemPrice" placeholder="Enter the price... Eg: Ugx4..">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="addCategorie">Categorie: </label>
+						<select class="category inline-block ease-in-out-all-quick" id="addCategorie">
+							<option>Category</option>
+							<option>Electronics</option>
+							<option>Clothes</option>
+						</select>
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="fileupload"> Select an Image :</label>
+						<input class="ease-in-out-all tag" type="file" name="fileupload" value="fileupload" id="fileupload">
+					</div>
+					<div class="block inputs ease-in-out-all">
+						<input type="submit" name="submit" value="Add an item">
+					</div>	
+			</div>
+			<!-- end of add item -->
+
+			<!-- div to edit an item -->
+			<div class="block box align-left ease-in-out-all hidden" id="editItem">
+				<div class="title">
+					Edit an Item
+				</div>
+				<hr class="soften">
+				<form class="form signup ease-in-out-all left"  id="signup" method="post" action="dashboard.html">
+					<div class="block inputs">
+						<label class="tag" for="itemName">Item name: </label>
+						<input type="text"  class="ease-in-out-all" name="name" id="itemName" placeholder="Enter item name here">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="itemPrice">Item price: </label>
+						<input type="text"  class="ease-in-out-all"  name="phone" id="itemPrice" placeholder="Enter the price... Eg: Ugx4..">
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="addCategorie">Categorie: </label>
+						<select class="category inline-block ease-in-out-all-quick" id="addCategorie">
+							<option>Category</option>
+							<option>Electronics</option>
+							<option>Clothes</option>
+						</select>
+					</div>
+					<div class="block inputs">
+						<label class="tag" for="fileupload"> Select an Image :</label>
+						<input class="ease-in-out-all tag" type="file" name="fileupload" value="fileupload" id="fileupload">
+					</div>
+					<div class="block inputs ease-in-out-all">
+						<input type="submit" name="submit" value="Edit an item">
+					</div>	
+			</div>
+			<!-- end of edit item -->	
+
+			<!-- div to delete an item in the store -->
+			<div class="block box align-left ease-in-out-all hidden" id="deleteItem">
+				<div class="title">
+					Manager store
+				</div>
+				<table class="cart align-left">
+					<thead>
+						<tr class="centered">
+							<td class="centered">No</td>
+							<td class="centered">Image</td>
+							<td class="centered">Description</td>
+							<td class="centered">Action</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="centered cart-article">
+							<td class="centered">01</td>
+							<td class="centered">
+								<div class="img centered">
+									<img src="img/store1.jpg">
+								</div>
+							</td>
+							<td class="centered">
+								<div class="cart-price">Ugx40 000</div>
+								<div>Quantity: 3</div>
+								<div> Since 3hours</div>
+							</td>
+							<td class="centered">
+								<button class="block remove-item"> <span>-</span> Delete Item</button>
+							</td>
+						</tr>
+						<tr class="centered cart-article">
+							<td class="centered">01</td>
+							<td class="centered">
+								<div class="img centered">
+									<img src="img/store1.jpg">
+								</div>
+							</td>
+							<td class="centered">
+								<div class="cart-price">Ugx40 000</div>
+								<div>Quantity: 3</div>
+								<div> Since 3hours</div>
+							</td>
+							<td class="centered">
+								<button class="block remove-item"> <span>-</span> Delete Item</button>
+							</td>
+						</tr>
+						<tr class="centered cart-article">
+							<td class="centered">01</td>
+							<td class="centered">
+								<div class="img centered">
+									<img src="img/store1.jpg">
+								</div>
+							</td>
+							<td class="centered">
+								<div class="cart-price">Ugx40 000</div>
+								<div>Quantity: 3</div>
+								<div> Since 3hours</div>
+							</td>
+							<td class="centered">
+								<button class="block remove-item"> <span>-</span> Delete Item</button>
+							</td>
+						</tr>
+						<tr class="centered cart-article">
+							<td class="centered">01</td>
+							<td class="centered">
+								<div class="img centered">
+									<img src="img/store1.jpg">
+								</div>
+							</td>
+							<td class="centered">
+								<div class="cart-price">Ugx40 000</div>
+								<div>Quantity: 3</div>
+								<div> Since 3hours</div>
+							</td>
+							<td class="centered">
+								<button class="block remove-item"> <span>-</span> Delete Item</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- end of the table -->
+				<button class="pay-all">Delete all items</button>
+			</div>
+			<!-- end of the manager div -->
+
+		</div>
+			<!-- end of the div containing the 3/4 of the site -->
+
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
