@@ -3,5 +3,3 @@
 
 
 # storeManager
-
-This an app to manager a store
