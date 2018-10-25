@@ -6,7 +6,7 @@ class Product(object):
         self.store = []
 
     def add_product(self):
-        """ adds products to the store """
+        """ adds products to the store comment"""
         products = {
                 "product_id": len(self.store)+1,
                 "product_name" : request.json["product_name"],
@@ -18,7 +18,7 @@ class Product(object):
         return self.store
         
     def get_products(self):
-        """ no products have been added"""
+        """ no products have been added comment"""
         if len(self.store) == 0:
             mess = "empty"
             return mess
