@@ -42,29 +42,29 @@
 					Create a new user
 				</div>
 				<!-- form to create a new user  -->
-				<form class="form signup ease-in-out-all left"  id="signup" method="post" action="admin.html" onsubmit="return(login.validate())">
+				<form class="form signup ease-in-out-all left"  id="adduser" method="post" action="admin.html" onsubmit="return addUser_validation()">
 					<div class="block inputs align-left alert">
-						<span class="text-red align-left" id="alert-form"></span>
+						<span class="text-red align-left" id="alert-login"></span>
 					</div>
 					<div class="block inputs">
 						<label class="tag" for="name">Full name: </label>
-						<input type="text"  class="ease-in-out-all" name="name" id="name" placeholder="Enter your fullname" cmd-input="validate=>string">
+						<input type="text"  class="ease-in-out-all" name="name" id="first_name" placeholder="Enter your fullname">
 					</div>
 					<div class="block inputs">
 						<label class="tag" for="phone">Phone: </label>
-						<input type="text"  class="ease-in-out-all"  name="phone" id="phone" placeholder="Enter your phone number" cmd-input="validate=>email">
+						<input type="text"  class="ease-in-out-all"  name="phone" id="phone" placeholder="Enter your phone number">
 					</div>
 					<div class="block inputs">
 						<label class="tag" for="sign-email">Email: </label>
-						<input type="email"  class="ease-in-out-all"  name="sign-email" id="sign-email" placeholder="Enter your email">
+						<input type="email"  class="ease-in-out-all"  name="sign-email" id="sign_email" placeholder="Enter your email">
 					</div>
 					<div class="block inputs">
 						<label class="tag" for="passcode">Password: </label>
-						<input type="password"  class="ease-in-out-all" name="passcode" placeholder="Enter your password">
+						<input type="password"  class="ease-in-out-all" name="passcode" id="passcode" placeholder="Enter your password">
 					</div>
 					<div class="block inputs">
 						<label class="tag" for="passcode-confirm">Confirm: </label>
-						<input type="password"  class="ease-in-out-all" name="passcode-confirm" id="passcode-confirm" placeholder="Confirm your password">
+						<input type="password"  class="ease-in-out-all" name="passcode-confirm" id="passcode_confirm" placeholder="Confirm your password">
 					</div>
 					<div class="block inputs">
 						<input type="submit"  class="ease-in-out-all" value="Create Now">
@@ -77,7 +77,6 @@
 			<!-- end of the div containing the 3/4 of the site -->
 
 	</div>
-	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/scr.js"></script>
 </body>
 </html>

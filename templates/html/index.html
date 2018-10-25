@@ -23,24 +23,24 @@
 			<div class="block">
 				<h1>LOGIN</h1>
 			</div>
-			<form class="form login ease-in-out-all" method="post" id="login" action="dashboard.html" onsubmit="return(login.validate())">
+			<form class="form login ease-in-out-all" method="post" id="login" action="dashboard.html" onsubmit="return validateLogin()" method="POST">
 				<div class="block inputs align-left alert">
 					<span class="text-red align-left" id="alert-login"></span>
 				</div>
 				<div class="block inputs">
 					<label class="tag" for="email">Email: </label>
-					<input type="email" class="ease-in-out-all" name="email" id="email" placeholder="Enter your email"  cmd-input="validate=>email">
+					<input type="email" class="ease-in-out-all" name="email" id="email" placeholder="Enter your email">
 				</div>
 				<div class="block inputs">
 					<label class="tag" for="password">Password: </label>
-					<input type="password"  class="ease-in-out-all"  name="password" id="password" placeholder="Enter your password"  cmd-input="validate=>password">
+					<input type="password"  class="ease-in-out-all"  name="password" id="password" placeholder="Enter your password">
 				</div>
 				<div class="block inputs align-left remember">
 					<label class="remember" for="remember">Stay conneted?</label>
 					<input type="checkbox"  class="ease-in-out-all" name="remember" id="remember" checked>
 				</div>
 				<div class="block inputs">
-					<input type="submit"  class="ease-in-out-all"  value="Sign-in" cmd-click="submit=>login">
+					<input type="submit"  class="ease-in-out-all"  value="Sign-in">
 				</div>
 				<div class="block inputs">
 					<span class="recover ease-in-out-all">Forgot your password?</span><span class="stroke">&nbsp&nbsp|&nbsp&nbsp</span><span class="ease-in-out-all help">Help?</span>
@@ -49,7 +49,7 @@
 		</div>
 		<!-- end of the div containing login and the 2/4 of the site -->
 	</div>
-	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="../js/script.js"></script>
+	
+	<script type="text/javascript" src="../js/scr.js"></script>
 </body>
 </html>
