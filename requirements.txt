@@ -4,7 +4,7 @@ attrs==18.2.0
 cffi==1.11.5
 coverage==4.3
 coveralls==1.5.1
-cryptography==2.3.1
+cryptography==3.2
 docopt==0.6.2
 enum34==1.1.6
 funcsigs==1.0.2
